@@ -1,3 +1,4 @@
+//å¯¹CheckLogin,javaçš„æ”¹è¿›ï¼Œä¿®æ­£äº†ç”¨æˆ·åä¸ºç©ºæˆ–è€…å¯†ç ä¸ºç©ºæ¬¡æ•°è¿‡å¤šï¼Œç³»ç»Ÿä¸é€€å‡ºçš„ç°è±¡ã€‚
 import java.util.Scanner;
 class Operate{
 	public void check(){
@@ -8,48 +9,48 @@ class Operate{
 		int num3 = 0;
 		int num4 = 0;
 		while(flag){
-			System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+			System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 			String username = scan.nextLine();
 			if(username.equals("")){
-				System.out.println("ÓÃ»§Ãû²»ÄÜÎª¿Õ£¬ÇëÖØĞÂÊäÈë£¡");
+				System.out.println("ç”¨æˆ·åä¸èƒ½ä¸ºç©ºï¼Œè¯·é‡æ–°è¾“å…¥ï¼");
 				flag = true;
 				num3++;
 				if(num3==3){
-					System.out.println("Îª¿Õ´ÎÊı¹ı¶à£¬ÏµÍ³ÍË³ö£¡");
+					System.out.println("ä¸ºç©ºæ¬¡æ•°è¿‡å¤šï¼Œç³»ç»Ÿé€€å‡ºï¼");
 					System.exit(1);
 				}
 			}else {
 				if(username.equals("lcy")){
-					System.out.println("ÇëÊäÈëÃÜÂë£º");
+					System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 					String password = scan.nextLine();
 					if(password.equals("")){
-						System.out.println("ÃÜÂë²»ÄÜÎª¿Õ£¬ÇëÖØĞÂÊäÈë£¡");
+						System.out.println("å¯†ç ä¸èƒ½ä¸ºç©ºï¼Œè¯·é‡æ–°è¾“å…¥ï¼");
 						flag = true;
 						num4++;
 						if(num4==3){
-							System.out.println("Îª¿Õ´ÎÊı¹ı¶à£¬ÏµÍ³ÍË³ö£¡");
+							System.out.println("ä¸ºç©ºæ¬¡æ•°è¿‡å¤šï¼Œç³»ç»Ÿé€€å‡ºï¼");
 							System.exit(1);
 						}
 					}else{
 						if(password.equals("123456")){
-							System.out.println("µÇÂ½³É¹¦£¡");
+							System.out.println("ç™»é™†æˆåŠŸï¼");
 							flag = false;
 						}else{
-							System.out.println("ÃÜÂë´íÎó£¬Çë´ÓĞÂÊäÈë£º");
+							System.out.println("å¯†ç é”™è¯¯ï¼Œè¯·ä»æ–°è¾“å…¥ï¼š");
 							num2++;
 							if(num2==3){
-								System.out.println("´íÎó´ÎÊı¹ı¶à£¬ÏµÍ³ÍË³ö!");
+								System.out.println("é”™è¯¯æ¬¡æ•°è¿‡å¤šï¼Œç³»ç»Ÿé€€å‡º!");
 								System.exit(1);
 							}
 							flag = true;
 						}
 					}
 				}else{
-					System.out.println("ÓÃ»§Ãû´íÎó£¬Çë´ÓĞÂÊäÈë£º");
+					System.out.println("ç”¨æˆ·åé”™è¯¯ï¼Œè¯·ä»æ–°è¾“å…¥ï¼š");
 					num1++;
 					flag = true;
 					if(num1==3){
-						System.out.println("´íÎó´ÎÊı¹ı¶à£¬ÏµÍ³ÍË³ö");
+						System.out.println("é”™è¯¯æ¬¡æ•°è¿‡å¤šï¼Œç³»ç»Ÿé€€å‡º");
 						System.exit(1);
 					}
 				}
